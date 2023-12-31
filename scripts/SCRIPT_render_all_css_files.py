@@ -20,7 +20,8 @@ for name in all_name_files:
 #-------------------------------------------
 
 def render_template(namestyle):
-    system(f"sass ../skinsCode/{namestyle}/{namestyle}.light.sass ../skins/{namestyle}.css")
+    system(f"sass ../skinsCode/{namestyle}/{namestyle}.light.scss ../skins/{namestyle}.light.css --style compressed")
+    system(f"sass ../skinsCode/{namestyle}/{namestyle}.dark.scss  ../skins/{namestyle}.dark.css  --style compressed")
     print("render "+namestyle+" ok!")
 
 #-------------------------------------------

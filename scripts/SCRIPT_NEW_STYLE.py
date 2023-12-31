@@ -24,12 +24,12 @@ def createNewStyle(nameStyle):
     def filepath(name):return str(join(stylepath,name))
     makedirs(stylepath)
     #--- light theme-------
-    newFile(filepath(nameStyle+".light.sass"),
+    newFile(filepath(nameStyle+".light.scss"),
 f"""// theme {nameStyle}-light, for BulmaSkins by Edwin Saul  
 //            
             """)
     #--- Dark theme-------
-    newFile(filepath(nameStyle+".dark.sass"),
+    newFile(filepath(nameStyle+".dark.scss"),
 f"""// theme {nameStyle}-dark, for BulmaSkins by Edwin Saul  
 //            
             """)
