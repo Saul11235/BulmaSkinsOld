@@ -1,4 +1,4 @@
-# script for creat an new style
+# script for create an new style
 # writed by Edwin Saul
 
 from os.path import isdir, join
@@ -10,9 +10,6 @@ all_name_files=listdir("../skinsCode")
 for name in all_name_files:
     if isdir(join("../skinsCode",name)):
         all_name_skins.append(name.upper())
-
-#-----------------------------------------
-
 
 #-----------------------------------------
 
