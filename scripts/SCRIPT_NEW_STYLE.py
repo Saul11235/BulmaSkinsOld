@@ -26,20 +26,27 @@ def createNewStyle(nameStyle):
     #--- light theme-------
     newFile(filepath(nameStyle+".light.scss"),
 f"""// theme {nameStyle}-light, for BulmaSkins by Edwin Saul  
-@import "../../bulma/bulma.sass";            
-//---- code here: ------
+@import "../../bulma/bulma.sass";  //import bulma            
+//--------------------------------------------------------------
+
+
 """)
     #--- Dark theme-------
     newFile(filepath(nameStyle+".dark.scss"),
 f"""// theme {nameStyle}-dark, for BulmaSkins by Edwin Saul  
-@import "{nameStyle}.light.scss";            
-//---- code here: ------
+@import "{nameStyle}.light.scss";  // import {nameStyle} light skin
+//--------------------------------------------------------------
+
+
+
 """)
     #--- README.md -------
     newFile(filepath("README.md"),
 f"""
 # {nameStyle}            
-theme of BulmaSkins, visit project page here:
+
+a Theme for Bulma part of BulmaSkins             
+
 [![ Preview {nameStyle} ](https://img.shields.io/badge/-Preview_{nameStyle}-red)](https://saul11235.github.io/BulmaSkins/view?skin={nameStyle})
 [![ light mode ](https://img.shields.io/badge/-light_mode-black)](https://saul11235.github.io/BulmaSkins/view?skin={nameStyle}&dark=false)
 [![ dark mode ](https://img.shields.io/badge/-dark_mode-black)](https://saul11235.github.io/BulmaSkins/view?skin={nameStyle}&dark=true)
@@ -47,11 +54,11 @@ theme of BulmaSkins, visit project page here:
 ## adding in your project
 if you what to use this theme in your project put this in your html doc:
 
-### Add only {nameStyle}-light 
+### {nameStyle}-light via CDN
 ```html
 <link id="BulmaSkins" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/{nameStyle}.light.css">
 ```
-### Add only {nameStyle}-dark
+### {nameStyle}-dark via CDN
 ```html
 <link id="BulmaSkins" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/{nameStyle}.light.dark">
 ```
