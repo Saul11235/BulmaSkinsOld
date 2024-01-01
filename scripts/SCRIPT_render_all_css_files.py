@@ -1,14 +1,23 @@
 # script for render all BulmaSkins css files
 # writed by Edwin Saul
 
-#-------------------------------------------
-
-#-------------------------------------------
-
-#-------------------------------------------
-
 from os.path import isdir, join
-from os import listdir,system
+from os import listdir,system,rmdir, remove
+
+#-------------------------------------------
+
+def delete_all_contents(path):
+    for element in listdir(path):
+        full_path=join(path,element)
+        if isdir(full_path): rmdir(full_path) 
+        else: remove(full_path)
+
+#-------------------------------------------
+
+delete_all_contents("../skins")
+delete_all_contents("../skinsjs")
+
+#-------------------------------------------
 
 all_name_skins=[]
 all_name_files=listdir("../skinsCode")
