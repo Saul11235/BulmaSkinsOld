@@ -1,4 +1,4 @@
 // no code manually this file is generated
 function get_name_skins() {
- return ['cuscu','default','murcielago','peru','saul'];
+ return ['test'];
 }
