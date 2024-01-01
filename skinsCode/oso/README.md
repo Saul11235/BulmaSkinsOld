@@ -23,7 +23,7 @@ if you what to use this theme in your project put this in your html doc:
             
 
 
-[![github profile]f(https://img.shields.io/badge/-github_profile-black)](https://github.com/Saul11235)
+[![github profile](https://img.shields.io/badge/-github_profile-black)](https://github.com/Saul11235)
 [![personal page](https://img.shields.io/badge/-personal_page-red)](https://edwinsaul.com)
 [![python packages](https://img.shields.io/badge/-python_packages-green)](https://pypi.org/user/EdwinSaul/)
 [![my blog](https://img.shields.io/badge/-illarisoft-blue)](https://www.illarisoft.com/)
