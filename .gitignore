@@ -1,7 +1,6 @@
 /bulma
 *.swp
 *.pyc
-*.map
 */__pycache__
 
 
