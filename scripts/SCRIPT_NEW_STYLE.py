@@ -57,8 +57,7 @@ if you what to use this theme in your project put this in your html doc:
 ```
 
 [![Bulma skins](https://img.shields.io/badge/-Bulma_skins-blue)](https://saul11235.github.io/BulmaSkins/)
- by             
-[![Edwin Saul](https://img.shields.io/badge/-Edwin_Saul-black)](https://edwinsaul.com)
+[![By Edwin Saul](https://img.shields.io/badge/-By_Edwin_Saul-black)](https://edwinsaul.com)
             """)          
     #--- SCRIPT_render_this.py-------
     newFile(filepath("SCRIPT_render_this.py"),
