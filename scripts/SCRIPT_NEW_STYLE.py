@@ -40,9 +40,9 @@ f"""// theme {nameStyle}-dark, for BulmaSkins by Edwin Saul
 f"""
 # {nameStyle}            
 theme of BulmaSkins, visit project page here:
-[![ Preview {nameStyle} ](https://img.shields.io/badge/-Preview-{nameStyle}-red)](https://saul11235.github.io/BulmaSkins/view?skin={nameStyle})
-[![ light mode ](https://img.shields.io/badge/-light-mode-black)](https://saul11235.github.io/BulmaSkins/view?skin={nameStyle}&dark=false)
-[![ dark mode ](https://img.shields.io/badge/-dark-mode-black)](https://saul11235.github.io/BulmaSkins/view?skin={nameStyle}&dark=true)
+[![ Preview {nameStyle} ](https://img.shields.io/badge/-Preview_{nameStyle}-red)](https://saul11235.github.io/BulmaSkins/view?skin={nameStyle})
+[![ light mode ](https://img.shields.io/badge/-light_mode-black)](https://saul11235.github.io/BulmaSkins/view?skin={nameStyle}&dark=false)
+[![ dark mode ](https://img.shields.io/badge/-dark_mode-black)](https://saul11235.github.io/BulmaSkins/view?skin={nameStyle}&dark=true)
 
 ## adding in your project
 if you what to use this theme in your project put this in your html doc:
@@ -56,9 +56,9 @@ if you what to use this theme in your project put this in your html doc:
 <link id="BulmaSkins" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/{nameStyle}.light.dark">
 ```
 
-[![Bulma skins](https://img.shields.io/badge/-Bulma-skins-blue)](https://saul11235.github.io/BulmaSkins/)
+[![Bulma skins](https://img.shields.io/badge/-Bulma_skins-blue)](https://saul11235.github.io/BulmaSkins/)
  by             
-[![Edwin Saul](https://img.shields.io/badge/-Edwin-Saul-black)](https://edwinsaul.com)
+[![Edwin Saul](https://img.shields.io/badge/-Edwin_Saul-black)](https://edwinsaul.com)
             """)          
     #--- SCRIPT_render_this.py-------
     newFile(filepath("SCRIPT_render_this.py"),
