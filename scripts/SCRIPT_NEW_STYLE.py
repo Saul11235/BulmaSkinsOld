@@ -43,7 +43,7 @@ f"""//
 //
 //---------------------------------------
 
-$bulmaskin_var: darkred;
+$bulmaskin_var: darkred; // <-- custom color
 $colors: mergeColorMaps(
     (    
     "primary": (

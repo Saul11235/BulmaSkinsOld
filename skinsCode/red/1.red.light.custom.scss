@@ -1,0 +1,19 @@
+//
+// custom red light style here
+//
+//---------------------------------------
+
+$bulmaskin_var: darkred; // <-- custom color
+$colors: mergeColorMaps(
+    (    
+    "primary": (
+            $bulmaskin_var,
+            $white,
+        ),
+    ),
+    $custom-colors
+);
+$link: $bulmaskin_var;
+$body-background-color: white;
+
+            
