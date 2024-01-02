@@ -1,0 +1,19 @@
+//
+// custom verde light style here
+//
+//---------------------------------------
+
+$bulmaskin_var: darkgreen;
+$colors: mergeColorMaps(
+    (    
+    "primary": (
+            $bulmaskin_var,
+            $white,
+        ),
+    ),
+    $custom-colors
+);
+$link: $bulmaskin_var;
+$body-background-color: white;
+
+            

@@ -40,4 +40,5 @@ for style in all_name_skins:
 
 #-------------------------------------------
 if __name__=="__main__":
+    import SCRIPT_create_namestyles_js
     input("all css files rendered! ")

@@ -1,7 +1,5 @@
 /bulma
 *.swp
 *.pyc
-*/__pycache__
 
-*/.test.*.light.html
-*/.test.*.dark.html
+*/__pycache__

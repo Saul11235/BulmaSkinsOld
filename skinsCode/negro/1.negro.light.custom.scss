@@ -1,0 +1,19 @@
+//
+// custom negro light style here
+//
+//---------------------------------------
+
+$bulmaskin_var: black;
+$colors: mergeColorMaps(
+    (    
+    "primary": (
+            $bulmaskin_var,
+            $white,
+        ),
+    ),
+    $custom-colors
+);
+$link: $bulmaskin_var;
+$body-background-color: white;
+
+            

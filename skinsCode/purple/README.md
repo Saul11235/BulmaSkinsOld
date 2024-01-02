@@ -1,0 +1,24 @@
+
+# purple            
+
+a Theme for Bulma part of BulmaSkins             
+
+[![ Preview purple ](https://img.shields.io/badge/-Preview_purple-red)](https://saul11235.github.io/BulmaSkins/view?skin=purple)
+[![ light mode ](https://img.shields.io/badge/-light_mode-black)](https://saul11235.github.io/BulmaSkins/view?skin=purple&dark=false)
+[![ dark mode ](https://img.shields.io/badge/-dark_mode-black)](https://saul11235.github.io/BulmaSkins/view?skin=purple&dark=true)
+
+## adding in your project
+if you what to use this theme in your project put this in your html doc:
+
+### purple-light via CDN
+```html
+<link id="BulmaSkins" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/purple.light.css">
+```
+### purple-dark via CDN
+```html
+<link id="BulmaSkins" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/purple.light.dark">
+```
+
+[![Bulma skins](https://img.shields.io/badge/-Bulma_skins-blue)](https://saul11235.github.io/BulmaSkins/)
+[![By Edwin Saul](https://img.shields.io/badge/-By_Edwin_Saul-black)](https://edwinsaul.com)
+            
