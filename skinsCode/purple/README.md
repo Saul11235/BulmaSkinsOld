@@ -12,23 +12,24 @@ if you what to use this theme in your project put this in your html doc:
 
 ### purple-light via CDN
 ```html
-<link id="BulmaSkins" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/purple.light.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/purple.light.css">
 ```
 ### purple-dark via CDN
 ```html
-<link id="BulmaSkins" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/purple.dark.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/purple.dark.css">
 ```
 
 ### purple whith switch-color via CDN
 in head element:
 ```html
+<!-- begin BulmaSkins - purple -->
 <link id="BulmaSkins-light" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/purple.light.css">
 <link id="BulmaSkins-dark"  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/purple.light.css">
-<script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/BulmaSkinsJs/first.js""></script>
+<script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/BulmaSkinsJs/first.js"></script>
 ```
-
 creating a button to manage the switch themes, in body:            
 ```html
+<!-- BulmaSkins-switch -->
 <button id="BulmaSkins-switch" class="button is-primary">
  <div id="BulmaSkins-switch-light">
   Light
@@ -38,10 +39,10 @@ creating a button to manage the switch themes, in body:
  </div>
 </button>
 ```
-
 in end of body element:            
 ```html
-<script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/BulmaSkinsJs/last.js""></script>
+<!-- end BulmaSkins -->
+<script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/BulmaSkinsJs/last.js"></script>
 ```
 
 
