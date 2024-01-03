@@ -15,7 +15,6 @@ def delete_all_contents(path):
 #-------------------------------------------
 
 delete_all_contents("../skins")
-delete_all_contents("../skinsjs")
 
 #-------------------------------------------
 
