@@ -127,8 +127,35 @@ if you what to use this theme in your project put this in your html doc:
 ```
 ### {nameStyle}-dark via CDN
 ```html
-<link id="BulmaSkins" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/{nameStyle}.light.dark">
+<link id="BulmaSkins" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/{nameStyle}.dark.css">
 ```
+
+### {nameStyle} whith switch-color via CDN
+in head element:
+```html
+<link id="BulmaSkins-light" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/{nameStyle}.light.css">
+<link id="BulmaSkins-dark"  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/{nameStyle}.light.css">
+<script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/BulmaSkinsJs/first.js""></script>
+```
+
+creating a button to manage the switch themes, in body:            
+```html
+<button id="BulmaSkins-switch" class="button is-primary">
+ <div id="BulmaSkins-switch-light">
+  Light
+ </div>
+ <div id="BulmaSkins-switch-dark" style="display:none">
+   Dark
+ </div>
+</button>
+```
+
+in end of body element:            
+```html
+<script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/BulmaSkinsJs/last.js""></script>
+```
+
+
 
 [![Bulma skins](https://img.shields.io/badge/-Bulma_skins-blue)](https://saul11235.github.io/BulmaSkins/)
 [![By Edwin Saul](https://img.shields.io/badge/-By_Edwin_Saul-black)](https://edwinsaul.com)

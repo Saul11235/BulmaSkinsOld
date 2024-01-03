@@ -1,0 +1,49 @@
+function BulmaSkins_get() {
+  // null if the cookie not exists; true light; false dark
+    var cookies = document.cookie.split(';');
+    console.log(cookies);
+    for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i].trim();
+        if (cookie.indexOf('BulmaSkins_cookie=') === 0) {
+	  if (cookie.replace("BulmaSkins_cookie","").replace("=","").trim()==="true")
+	  { console.log("get true");
+	    return true;
+	  }
+	  else {
+	   console.log("get false");
+	    return false};
+        }
+    }
+    console.log("get false");
+    return null; // BulmaSkins_cookie not exists
+};
+function BulmaSkins_set(state) {
+  // save state
+    var expiration= new Date();
+    expiration.setDate(expiration.getDate()+7);
+    var cookie = 'BulmaSkins_cookie=' + state+ '; expires=' + expiration.toUTCString() + '; path=/; sameSite=Strict';
+    document.cookie = cookie;
+    console.log("new cookie:"+cookie);
+    console.log(document.cookie);
+};
+// is dark mode
+function BulmaSkins_isdarkmode() {
+  return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+}
+// making BulmaSkins_state
+if ( BulmaSkins_get() === null){
+  console.log("creando nuevo estado");
+  if (BulmaSkins_isdarkmode()) {
+     BulmaSkins_set(false);
+   } else {
+     BulmaSkins_set(true);
+   }
+}
+// first theme config
+if (BulmaSkins_get() === true) {
+  document.getElementById("BulmaSkins-light").disabled=false;
+  document.getElementById("BulmaSkins-dark").disabled=true;
+} else {
+  document.getElementById("BulmaSkins-dark").disabled=false;
+  document.getElementById("BulmaSkins-light").disabled=true;
+};
