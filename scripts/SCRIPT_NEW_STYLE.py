@@ -135,7 +135,7 @@ in head element:
 ```html
 <!-- begin BulmaSkins - {nameStyle} -->
 <link id="BulmaSkins-light" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/{nameStyle}.light.css">
-<link id="BulmaSkins-dark"  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/{nameStyle}.light.css">
+<link id="BulmaSkins-dark"  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/{nameStyle}.dark.css">
 <script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/BulmaSkinsJs/first.js"></script>
 ```
 creating a button to manage the switch themes, in body:            
