@@ -35,7 +35,9 @@ if ( BulmaSkins_get() === null){
 if (BulmaSkins_get() === true) {
   document.getElementById("BulmaSkins-light").disabled=false;
   document.getElementById("BulmaSkins-dark").disabled=true;
+  BulmaSkins_set(true);
 } else {
   document.getElementById("BulmaSkins-dark").disabled=false;
   document.getElementById("BulmaSkins-light").disabled=true;
+  BulmaSkins_set(false);
 };
