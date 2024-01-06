@@ -143,7 +143,7 @@ creating a button to manage the switch themes, in body:
 <!-- BulmaSkins-switch -->
 <button id="BulmaSkins-switch" class="button is-primary">
  <div id="BulmaSkins-switch-light">
-  Light
+   Light
  </div>
  <div id="BulmaSkins-switch-dark" style="display:none">
    Dark

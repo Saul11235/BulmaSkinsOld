@@ -5,79 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test</title>
-    <!-- Add any additional meta tags, stylesheets, or scripts here -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/blue.light.css">
-<style>
-body {
-}
-.render-container {
-  max-width:  720px;
-  border: 1px solid black;
-
-
-
-}
-.center_render {
-}  
-.footer_render {
-}
-</style>
-
+    <!-- begin BulmaSkins - king -->
+    <link id="BulmaSkins-light" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/king.light.css">
+    <link id="BulmaSkins-dark"  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/king.dark.css">
+    <script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/BulmaSkinsJs/first.js"></script>
 </head>
-
-
 <body>
-    <!-- Your page content goes here -->
-
-    <h1>Hello, World!</h1>
-    <p>This is a simple HTML document.</p>
 
 
-    <div class="container has-text-centered">
+<div class="box is-spaced content">
+  <h1> Render Page </h1>
+  <p> pag render </p>
+  <!-- BulmaSkins-switch -->
+  <button id="BulmaSkins-switch" class="button is-primary">
+    <div id="BulmaSkins-switch-light">
+      Light
+    </div>
+    <div id="BulmaSkins-switch-dark" style="display:none">
+      Dark
+    </div>
+  </button>
+</div>
 
-    <div style="max-width: 720px; border: 1px solid black;" >
-<!-- -->
-<section class="hero is-primary is-small">
-  <div class="hero-body ">
-    <h2 class="title is-4">BulmaSkins</h2>
+
+<div class="container is-centered">
+<!-- -----------------------------------------   -->
+  <div id="render_target" style="width: 720px; border: 1px solid black;" >
+    <section class="hero is-primary is-small">
+      <div class="hero-body is-narrow">
+	<div class="columns">
+	  <div class="column is-10">
+	    <h1 class="title is-5"> BulmaSkins</h1>
+	  </div>
+	  <div class="column is-2 ">
+            <div class="delete is-large is-pulled-right"> </div>
+	  </div>
+	</div>
+      </div>
+    </section>
+    <section class="hero is-expanded center_render">
+      <div class="hero-body">
+        <div class="container has-text-centered is-vcentered">
+          <br/>
+          <p class="title is-2">blue-ligth </p>
+          <p class="subtitle is-4">BulmaSkins</p>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="buttons is-centered">
+         <button class="button is-primary">Primary</button>
+         <button class="button is-link">Link</button>
+         <button class="button is-info">Info</button>
+         <button class="button is-success">Success</button>
+         <button class="button is-warning">Warning</button>
+         <button class="button is-danger">Danger</button>
+        </div>
+      </div>
+    </section>
   </div>
-</section>
-<!-- -->
-<section class="hero is-expanded center_render">
-  <div class="hero-body">
-    <div class="container has-text-centered is-vcentered">
-      <p class="title is-2">blue-ligth </p>
-    </div>
-  </div>
-</section>
-<!-- -->
-
-<section class="hero is-small footer_render">
-  <div class="hero-body">
-    <div class="buttons has-text-centered has-addons-centered">
-     <button class="button is-primary">Primary</button>
-     <button class="button is-link">Link</button>
-     <button class="button is-info">Info</button>
-     <button class="button is-success">Success</button>
-     <button class="button is-warning">Warning</button>
-     <button class="button is-danger">Danger</button>
-    </div>
-  </div>
-</section>
+  <!-- -----------------------------------------   -->
+</div>
 
 
-<!-- -->
+<!-- End BulmaSkins -->
+<script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/BulmaSkinsJs/last.js"></script>
+<script src="render_image.js"></script>
 
-
-    </div>
-
-    </div>
-    <!-- Add more HTML elements as needed -->
-
-    <!-- Your scripts or additional content can be included at the end of the body -->
-
-    <!-- Example script tag -->
-    <!-- <script src="your-script.js"></script> -->
 </body>
-
 </html>
