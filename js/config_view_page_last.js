@@ -1,10 +1,20 @@
 /* Config view page to firt use in BulmaSkin view*/
 
 //---------------------------------------------------------
+function set_text_element(idElement,text) {
+  var element=document.getElementById(idElement);
+  if (element!==null) {
+    element.innerText=text.trim();
+  };
+};
 
 
-title_doc=document.getElementById("title_target");
-title_doc.innerText=skin;
+//---------------------------------------------------------
+
+
+
+
+set_text_element("title_target",skin+" skin");
 
 
 
