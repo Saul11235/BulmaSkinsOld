@@ -18,7 +18,7 @@ function BulmaSkins_set(state) {
   // save state
     var expiration= new Date();
     expiration.setDate(expiration.getDate()+7);
-    var cookie = 'BulmaSkins_cookie=' + state+ '; expires=' + expiration.toUTCString() + '; path=/; sameSite=Lax';
+    var cookie = 'BulmaSkins_cookie=' + state+ '; expires=' + expiration.toUTCString() + '; path=/; sameSite=None; Secure';
     document.cookie = cookie;
 };
 // is dark mode
