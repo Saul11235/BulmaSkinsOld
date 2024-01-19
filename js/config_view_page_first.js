@@ -1,13 +1,9 @@
 /* Config view page to firt use in BulmaSkin view*/
-console.log("config theme")
-
-var skin="king";
+var skin="defauult";
 var currentUrl = window.location.href;
 
 //---------------------------------------
 var url=new URL(currentUrl);
-
-
 
 if (!(url.searchParams.get("skin") === null)){
   skin=url.searchParams.get("skin");
@@ -22,12 +18,6 @@ if ( url.searchParams.get("dark") === "false"){
   sessionStorage.setItem("BulmaSkins-state", JSON.stringify({ light: true}));
 } 
 
-
-
-
-
-
-
 //---------------------------------------
 var element_light=document.getElementById("BulmaSkins-light");
 var element_dark=document.getElementById("BulmaSkins-dark");
@@ -35,9 +25,6 @@ element_light.href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skin
 element_dark.href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/skins/"+skin+".dark.css";
 document.title=skin
 //---------------------------------------
-
-
-
 // making BulmaSkins_state
 if (sessionStorage.getItem("BulmaSkins-state") === null){
   console.log("creando nuevo estado");
@@ -55,8 +42,4 @@ if (JSON.parse(sessionStorage.getItem("BulmaSkins-state"))["light"] === true) {
   document.getElementById("BulmaSkins-dark").disabled=false;
   document.getElementById("BulmaSkins-light").disabled=true;
 };
-
-
-
-
 
